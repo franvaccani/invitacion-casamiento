@@ -26,16 +26,16 @@ const CEREMONY_IMAGES = [
 ];
 
 const PARTY_IMAGES = [
-  "/Book Mica y Fran (21).jpg",
+  "/fotos/Book Mica y Fran (467).jpg",
   "/Book Mica y Fran (377).jpg",
   "/fotos/Book Mica y Fran (458).jpg",
 ];
 
 const MOMENTOS_IMAGES = [
-  "/fotos/Book Mica y Fran (88).jpg",
+  "/fotos/Book Mica y Fran (494).jpg",
   "/fotos/Book Mica y Fran (249).jpg",
   "/Book Mica y Fran (321).jpg",
-  "/fotos/Book Mica y Fran (110).jpg",
+  "/fotos/Book Mica y Fran (27).jpg",
   "/fotos/Book Mica y Fran (526).jpg",
   "/fotos/Book Mica y Fran (94).jpg",
   "/fotos/Book Mica y Fran (567).jpg",
