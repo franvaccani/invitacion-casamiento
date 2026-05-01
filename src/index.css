@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300&family=Libre+Baskerville:wght@400;700&family=Inter:wght@300;400;600&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-serif: "Cormorant Garamond", serif;
+  --font-display: "Libre Baskerville", serif;
+
+  --color-wedding-blue: #334062;
+  --color-wedding-cream: #c7bdab;
+}
+
+@layer base {
+  body {
+    @apply bg-wedding-blue text-wedding-cream antialiased font-serif;
+  }
+}
+
+/* Custom scrollbar for better aesthetics */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #2d425c;
+}
+::-webkit-scrollbar-thumb {
+  background: #c7bdab44;
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #c7bdab66;
+}
