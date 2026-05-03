@@ -13,8 +13,24 @@ import {
   Church,
   PartyPopper,
   Shirt,
-  Check
+  Check,
+  Copy,
+  CheckCheck
 } from "lucide-react";
+
+const CopyButton = ({ text }: { text: string }) => {
+  const [copied, setCopied] = useState(false);
+  const handleCopy = () => {
+    navigator.clipboard.writeText(text);
+    setCopied(true);
+    setTimeout(() => setCopied(false), 2000);
+  };
+  return (
+    <button onClick={handleCopy} className="p-1.5 rounded-lg bg-wedding-cream/10 hover:bg-wedding-cream/20 transition-colors active:scale-90">
+      {copied ? <CheckCheck className="w-3.5 h-3.5 text-green-400" /> : <Copy className="w-3.5 h-3.5 text-wedding-cream/60" />}
+    </button>
+  );
+};
 
 /**
  * Image collections for different sections
@@ -366,7 +382,6 @@ export default function App() {
           >
             <div className="space-y-4">
               <h2 className="text-4xl md:text-5xl font-display italic">Momentos</h2>
-              <p className="text-[11px] tracking-[0.4em] uppercase opacity-80 font-sans font-bold">Nuestra Historia en Fotos</p>
             </div>
 
             <div className="grid grid-cols-2 md:grid-cols-4 gap-3 md:gap-4 auto-rows-[150px] md:auto-rows-[200px]">
@@ -456,8 +471,22 @@ export default function App() {
               </div>
               <div className="pt-8 border-t border-wedding-cream/20 space-y-6">
                 <div className="space-y-2">
-                  <span className="text-[11px] uppercase tracking-widest font-sans font-bold text-wedding-cream/80">Alias Bancario</span>
-                  <p className="text-2xl md:text-3xl font-display tracking-tight font-bold text-wedding-cream py-1">MICAYFRAN.BODA</p>
+                  <span className="text-[11px] uppercase tracking-widest font-sans font-bold text-wedding-cream/80">CBU</span>
+                  <div className="flex items-center justify-center gap-2">
+                    <p className="text-base md:text-lg font-mono tracking-wide text-wedding-cream py-1">2850564040095483607798</p>
+                    <CopyButton text="2850564040095483607798" />
+                  </div>
+                </div>
+                <div className="space-y-2">
+                  <span className="text-[11px] uppercase tracking-widest font-sans font-bold text-wedding-cream/80">Alias</span>
+                  <div className="flex items-center justify-center gap-2">
+                    <p className="text-lg md:text-xl font-display text-wedding-cream">micayfran.boda</p>
+                    <CopyButton text="micayfran.boda" />
+                  </div>
+                </div>
+                <div className="space-y-2">
+                  <span className="text-[11px] uppercase tracking-widest font-sans font-bold text-wedding-cream/80">Titular</span>
+                  <p className="text-lg md:text-xl font-display text-wedding-cream">Francisco Vaccani</p>
                 </div>
               </div>
             </motion.div>
