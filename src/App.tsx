@@ -162,7 +162,7 @@ export default function App() {
           >
             <div className="space-y-6">
               <Heart className="w-8 h-8 mx-auto opacity-30 fill-wedding-cream/10" />
-              <h2 className="text-4xl md:text-5xl font-display italic">falta poco para nuestro gran día</h2>
+              <h2 className="text-4xl md:text-5xl font-display italic">Falta poco para nuestro gran día</h2>
             </div>
             <div className="flex flex-wrap justify-center gap-2 md:gap-4 border border-wedding-cream/10 bg-white/5 backdrop-blur-sm rounded-3xl p-6 md:p-8 w-fit mx-auto shadow-xl">
               <CountdownItem value={timeLeft.days} label="Días" />
