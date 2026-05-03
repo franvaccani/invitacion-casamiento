@@ -457,7 +457,7 @@ export default function App() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-50px" }}
               transition={{ duration: 1.2, ease: [0.16, 1, 0.3, 1], delay: 0.2 }}
-              className="p-8 md:p-16 border border-wedding-cream/20 bg-white/5 rounded-[2.5rem] md:rounded-[3rem] space-y-10 shadow-lg text-center"
+              className="p-8 md:p-16 border border-wedding-cream/20 bg-[#334062]/50 backdrop-blur-sm rounded-[2.5rem] md:rounded-[3rem] space-y-10 shadow-lg text-center"
             >
               <div className="space-y-6">
                 <div className="bg-wedding-cream/10 p-3 rounded-full w-fit mx-auto">
