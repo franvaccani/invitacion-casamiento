@@ -205,7 +205,7 @@ export default function App() {
                 </div>
 
                 <a 
-                  href="https://www.google.com/maps/search/Roca+73"
+                  href="https://www.google.com/maps/search/Roca+63"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-start gap-4 md:gap-6 group hover:translate-x-1 transition-transform"
@@ -215,7 +215,7 @@ export default function App() {
                   </div>
                   <div className="space-y-1">
                     <h3 className="text-[11px] uppercase tracking-widest font-sans font-bold text-wedding-cream/80">Lugar</h3>
-                    <p className="text-xl md:text-2xl font-light">Iglesia — Roca 73</p>
+                    <p className="text-xl md:text-2xl font-light">Iglesia — Roca 63</p>
                     <div className="flex items-center gap-1.5 text-[10px] md:text-xs font-sans font-bold text-wedding-cream/90 mt-2 border-b border-wedding-cream/40 pb-0.5 w-fit uppercase tracking-widest">
                       Ver en Google Maps <ExternalLink className="w-3 h-3" />
                     </div>
@@ -473,15 +473,15 @@ export default function App() {
                 <div className="space-y-2">
                   <span className="text-[11px] uppercase tracking-widest font-sans font-bold text-wedding-cream/80">CBU</span>
                   <div className="flex items-center justify-center gap-2">
-                    <p className="text-base md:text-lg font-mono tracking-wide text-wedding-cream py-1">2850564040095483607798</p>
-                    <CopyButton text="2850564040095483607798" />
+                    <p className="text-base md:text-lg font-mono tracking-wide text-wedding-cream py-1">0000003100087842252202</p>
+                    <CopyButton text="0000003100087842252202" />
                   </div>
                 </div>
                 <div className="space-y-2">
                   <span className="text-[11px] uppercase tracking-widest font-sans font-bold text-wedding-cream/80">Alias</span>
                   <div className="flex items-center justify-center gap-2">
-                    <p className="text-lg md:text-xl font-display text-wedding-cream">micayfran.boda</p>
-                    <CopyButton text="micayfran.boda" />
+                    <p className="text-lg md:text-xl font-display text-wedding-cream">micayfranboda</p>
+                    <CopyButton text="micayfranboda" />
                   </div>
                 </div>
                 <div className="space-y-2">
